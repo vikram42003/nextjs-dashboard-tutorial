@@ -102,6 +102,7 @@ async function seedRevenue() {
 }
 
 export async function GET() {
+  console.log("WE ARE SEEDING")
   try {
     const result = await sql.begin((sql) => [
       seedUsers(),
